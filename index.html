@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kaung Si Thu — Portfolio</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Kaung Si Thu, Fullstack Developer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo"> KST<span class="dot">.</span> </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#tech" class="nav-link">Tech Stack</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle -->
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <!-- Sun -->
+            <svg
+              class="theme-icon theme-icon-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+
+            <!-- Moon -->
+            <svg
+              class="theme-icon theme-icon-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 12.79A9 9 0 1 1 11.21 3
+                   7 7 0 0 0 21 12.79z"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+      <!-- =======================================================
+           HERO
+      ======================================================== -->
+
+      <section class="hero" id="home">
+        <div class="hero-label">// hello world</div>
+
+        <h1 class="hero-name">Kaung Si Thu</h1>
+
+        <p class="hero-role">Fullstack Developer</p>
+
+        <p class="hero-desc">
+          Result-driven Software Engineer with a deep passion for building
+          scalable, clean, and maintainable backend architectures and web
+          applications. Adept at translating complex requirements into robust,
+          high-performance systems. Focused on writing pristine code that stands
+          the test of growth, seamlessly balancing engineering best practices
+          with a relentless drive for impactful business and product outcomes.
+        </p>
+
+        <!-- Social Links -->
+
+        <div class="hero-contact">
+          <ul class="contact-list">
+            <!-- Email -->
+            <li>
+              <a
+                href="mailto:kaungthux@gmail.com"
+                class="contact-item"
+                aria-label="Email"
+                title="Email"
+              >
+                <span class="contact-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12
+                         c0 1.1-.9 2-2 2H4
+                         c-1.1 0-2-.9-2-2V6
+                         c0-1.1.9-2 2-2z"
+                    />
+
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a
+                href="https://github.com/KaungSiThuX"
+                class="contact-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                title="GitHub"
+              >
+                <span class="contact-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3
+                         m14 6v-3.87
+                         a3.37 3.37 0 0 0-.94-2.61
+                         c3.14-.35 6.44-1.54 6.44-7
+                         A5.44 5.44 0 0 0 20 4.77
+                         A5.07 5.07 0 0 0 19.91 1
+                         S18.73.65 16 2.48
+                         a13.38 13.38 0 0 0-7 0
+                         C6.27.65 5.09 1 5.09 1
+                         A5.07 5.07 0 0 0 5 4.77
+                         a5.44 5.44 0 0 0-1.5 3.78
+                         c0 5.42 3.3 6.61 6.44 7
+                         A3.37 3.37 0 0 0 9 18.13V22"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kaung-si-thu-684b2b33a"
+                class="contact-item"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <span class="contact-icon">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7
+                         a2 2 0 0 0-2-2
+                         2 2 0 0 0-2 2v7h-4v-7
+                         a6 6 0 0 1 6-6z"
+                    />
+
+                    <rect x="2" y="9" width="4" height="12" />
+
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           WORK EXPERIENCE
+      ======================================================== -->
+
+      <section class="section" id="experience">
+        <h2 class="section-title">
+          <span class="num">01</span>
+          Work Experience
+        </h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — 2026</div>
+
+            <div class="timeline-content">
+              <h3>FullStack Developer</h3>
+
+              <span class="timeline-org"> Saungpokki </span>
+
+              <p>
+                Designed, built, and maintained robust full-stack platforms and
+                core e-learning/LMS modules, driving significant improvements in
+                application performance, scalability, and user experience.
+                Engineered end-to-end web applications from database
+                architecture to user interfaces, optimizing API handling,
+                client-server communication, and platform rendering to boost
+                system responsiveness. Built modular, highly reusable UI
+                components with a strict adherence to clean, testable code
+                practices, while partnering closely with cross-functional teams
+                to ship accessible, high-performing interfaces tailored for
+                students, parents, and staff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           PROJECTS
+      ======================================================== -->
+
+      <section class="section" id="projects">
+        <h2 class="section-title">
+          <span class="num">02</span>
+          Projects
+        </h2>
+
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-num"> 01 </span>
+
+              <div class="project-links">
+                <a
+                  href="https://www.saungpokki.com.sg/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live demo"
+                  title="Live demo"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5
+                         a2 2 0 0 1-2-2V8
+                         a2 2 0 0 1 2-2h6"
+                    />
+
+                    <polyline points="15 3 21 3 21 9" />
+
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-name">Saungpokki</h3>
+
+            <p class="project-desc">
+              A comprehensive e-learning and language education platform
+              featuring B2C/B2B course enrollments, digital subscriptions, and
+              interactive online classes. Built with robust user authentication,
+              secure payment processing integrations, and seamless course
+              management systems.
+            </p>
+
+            <div class="tags">
+              <span class="tag">NextJS</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Edtech</span>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-num"> 02 </span>
+
+              <div class="project-links">
+                <a
+                  href="https://www.ilbcquicklearn.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live demo"
+                  title="Live demo"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5
+                         a2 2 0 0 1-2-2V8
+                         a2 2 0 0 1 2-2h6"
+                    />
+
+                    <polyline points="15 3 21 3 21 9" />
+
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-name">ILBC Quick Learn</h3>
+
+            <p class="project-desc">
+              A free, on-the-go micro-learning web application featuring short,
+              bite-sized educational videos. Designed with a YouTube
+              Shorts-style interface, it allows users to effortlessly learn
+              languages and everyday life skills anytime, anywhere.
+            </p>
+
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Video Streaming</span>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-num"> 03 </span>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/KaungSiThuX/movie-ticket-reservation-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub repository"
+                  title="Source code"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3
+                         m14 6v-3.87
+                         a3.37 3.37 0 0 0-.94-2.61
+                         c3.14-.35 6.44-1.54 6.44-7
+                         A5.44 5.44 0 0 0 20 4.77
+                         A5.07 5.07 0 0 0 19.91 1
+                         S18.73.65 16 2.48
+                         a13.38 13.38 0 0 0-7 0
+                         C6.27.65 5.09 1 5.09 1
+                         A5.07 5.07 0 0 0 5 4.77
+                         a5.44 5.44 0 0 0-1.5 3.78
+                         c0 5.42 3.3 6.61 6.44 7
+                         A3.37 3.37 0 0 0 9 18.13V22"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-name">Movie Ticket Reservation API</h3>
+
+            <p class="project-desc">
+              A production-oriented application focusing on authentication,
+              ticket reservation, concurrency control, distributed systems,
+              real-time updates, asynchronous processing, payment integration,
+              and cloud services. The system is designed to handle real-world
+              backend challenges such as race conditions during seat
+              reservation, distributed locking, asynchronous jobs, real-time
+              client updates, payment confirmation, OTP authentication, caching,
+              and horizontal scaling.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           TECH STACK
+      ======================================================== -->
+
+      <section class="section" id="tech">
+        <h2 class="section-title">
+          <span class="num">03</span>
+          Tech Stack
+        </h2>
+
+        <!-- Languages -->
+
+        <h3 class="stack-group-title">Languages</h3>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                alt="Java"
+                loading="lazy"
+              />
+            </span>
+            <h4>Java</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                loading="lazy"
+              />
+            </span>
+            <h4>JavaScript</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                loading="lazy"
+              />
+            </span>
+            <h4>TypeScript</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                alt="SQL"
+                loading="lazy"
+              />
+            </span>
+            <h4>SQL</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="HTML"
+                loading="lazy"
+              />
+            </span>
+            <h4>HTML</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                alt="CSS"
+                loading="lazy"
+              />
+            </span>
+            <h4>CSS</h4>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+
+        <h3 class="stack-group-title">Libraries & Frameworks</h3>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                alt="React"
+                loading="lazy"
+              />
+            </span>
+            <h4>React</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                alt="Next.js"
+                loading="lazy"
+              />
+            </span>
+            <h4>Next.js</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS"
+                loading="lazy"
+              />
+            </span>
+            <h4>Tailwind CSS</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5z
+                     M2 17l10 5 10-5
+                     M2 12l10 5 10-5"
+                />
+              </svg>
+            </span>
+
+            <h4>shadcn/ui</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+                loading="lazy"
+              />
+            </span>
+            <h4>Node.js</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                alt="Express.js"
+                loading="lazy"
+              />
+            </span>
+            <h4>Express.js</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+                alt="NestJS"
+                loading="lazy"
+              />
+            </span>
+            <h4>NestJS</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                alt="Spring Boot"
+                loading="lazy"
+              />
+            </span>
+            <h4>Spring Boot</h4>
+          </div>
+        </div>
+
+        <!-- Databases -->
+
+        <h3 class="stack-group-title">Databases</h3>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+                loading="lazy"
+              />
+            </span>
+            <h4>PostgreSQL</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+                loading="lazy"
+              />
+            </span>
+            <h4>MySQL</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                loading="lazy"
+              />
+            </span>
+            <h4>MongoDB</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
+                alt="Redis"
+                loading="lazy"
+              />
+            </span>
+            <h4>Redis</h4>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+
+        <h3 class="stack-group-title">DevOps Tools</h3>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                alt="Docker"
+                loading="lazy"
+              />
+            </span>
+            <h4>Docker</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                alt="GitHub Actions"
+                loading="lazy"
+              />
+            </span>
+            <h4>GitHub Actions</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/amazonaws.svg"
+                alt="AWS"
+                loading="lazy"
+              />
+            </span>
+            <h4>AWS</h4>
+          </div>
+        </div>
+
+        <!-- Dev Tools -->
+
+        <h3 class="stack-group-title">Dev Tools</h3>
+
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                alt="Git"
+                loading="lazy"
+              />
+            </span>
+            <h4>Git</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                alt="VS Code"
+                loading="lazy"
+              />
+            </span>
+            <h4>VS Code</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+                alt="IntelliJ IDEA"
+                loading="lazy"
+              />
+            </span>
+            <h4>IntelliJ IDEA</h4>
+          </div>
+
+          <div class="stack-card">
+            <span class="stack-icon">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                alt="Postman"
+                loading="lazy"
+              />
+            </span>
+            <h4>Postman</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span> &copy; 2026 Kaung Si Thu </span>
+
+        <span class="footer-note"> With Love ❤️ </span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
